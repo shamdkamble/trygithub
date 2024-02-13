@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('#btn').click(function(){
+                $('#div').css({
+                    'width':'400px',
+                    'height':'400px',
+                    'background-color':'yellow',
+                    'border':'2px solid red',
+                }).toggle(2000).fadeIn(1000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn">Click me </button>
+    <div id="div">This is the div element</div>
+</body>
+
+</html>
